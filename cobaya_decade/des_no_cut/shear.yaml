@@ -1,0 +1,69 @@
+params:
+  A_IA_des:
+    prior:
+      min: -5
+      max: 5
+    ref: 0  
+    latex: A_{\mathrm{IA}}
+  eta_IA_des:
+    prior:
+      min: -5
+      max: 5
+    ref: 0   
+    latex: \eta_{\mathrm{IA}}
+  dz1_des:
+    prior:
+      dist: norm
+      loc: 0
+      scale: 0.018
+    ref: 0   
+    latex: \delta z_1
+  dz2_des:
+    prior:
+      dist: norm
+      loc: 0
+      scale: 0.015
+    ref: 0   
+    latex: \delta z_2
+  dz3_des:
+    prior:
+      dist: norm
+      loc: 0
+      scale: 0.011
+    ref: 0   
+    latex: \delta z_3
+  dz4_des:
+    prior:
+      dist: norm
+      loc: 0
+      scale: 0.017
+    ref: 0   
+    latex: \delta z_4
+  m1_des:
+    prior:
+      dist: norm
+      loc: -0.0063
+      scale: 0.0091
+    ref: 0   
+    latex: m^1
+  m2_des:
+    prior:
+      dist: norm
+      loc: -0.0198
+      scale: 0.0078
+    ref: 0   
+    latex: m^2
+  m3_des:
+    prior:
+      dist: norm
+      loc: -0.0241
+      scale: 0.0076
+    ref: 0   
+    latex: m^3
+  m4_des:
+    prior:
+      dist: norm
+      loc: -0.0369
+      scale: 0.0076
+    ref: 0   
+    latex: m^4

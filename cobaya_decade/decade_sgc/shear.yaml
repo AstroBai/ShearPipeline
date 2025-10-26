@@ -1,0 +1,69 @@
+params:
+  A_IA_decade_sgc:
+    prior:
+      min: -5
+      max: 5
+    ref: 0  
+    latex: A_{\mathrm{IA}}
+  eta_IA_decade_sgc:
+    prior:
+      min: -5
+      max: 5
+    ref: 0   
+    latex: \eta_{\mathrm{IA}}
+  dz1_decade_sgc:
+    prior:
+      dist: norm
+      loc: 0
+      scale: 0.0161
+    ref: 0   
+    latex: \delta z_1
+  dz2_decade_sgc:
+    prior:
+      dist: norm
+      loc: 0
+      scale: 0.0140
+    ref: 0   
+    latex: \delta z_2
+  dz3_decade_sgc:
+    prior:
+      dist: norm
+      loc: 0
+      scale: 0.0100
+    ref: 0   
+    latex: \delta z_3
+  dz4_decade_sgc:
+    prior:
+      dist: norm
+      loc: 0
+      scale: 0.0116
+    ref: 0   
+    latex: \delta z_4
+  m1_decade_sgc:
+    prior:
+      dist: norm
+      loc: -0.0133
+      scale: 0.00472
+    ref: 0   
+    latex: m^1
+  m2_decade_sgc:
+    prior:
+      dist: norm
+      loc: -0.0226
+      scale: 0.00657
+    ref: 0   
+    latex: m^2
+  m3_decade_sgc:
+    prior:
+      dist: norm
+      loc: -0.0367
+      scale: 0.00697
+    ref: 0   
+    latex: m^3
+  m4_decade_sgc:
+    prior:
+      dist: norm
+      loc: -0.0572
+      scale: 0.00804
+    ref: 0   
+    latex: m^4

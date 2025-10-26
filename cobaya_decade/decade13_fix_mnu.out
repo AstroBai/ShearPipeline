@@ -1,0 +1,7 @@
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+[0 : output] Output to be read-from/written-into folder 'decade13_fix_mnu_chains_cut', with prefix 'test'
+[0 : output] Found existing info files with the requested output prefix: 'decade13_fix_mnu_chains_cut/test'
+[0 : output] Will delete previous products ('force' was requested).
+[0 : parameterization] *WARNING* There are repeated parameter labels: {'A_{\\mathrm{IA}}': ['A_IA_des', 'A_IA_decade_ngc', 'A_IA_decade_sgc'], '\\eta_{\\mathrm{IA}}': ['eta_IA_des', 'eta_IA_decade_ngc', 'eta_IA_decade_sgc'], '\\delta z_1': ['dz1_des', 'dz1_decade_ngc', 'dz1_decade_sgc'], '\\delta z_2': ['dz2_des', 'dz2_decade_ngc', 'dz2_decade_sgc'], '\\delta z_3': ['dz3_des', 'dz3_decade_ngc', 'dz3_decade_sgc'], '\\delta z_4': ['dz4_des', 'dz4_decade_ngc', 'dz4_decade_sgc'], 'm^1': ['m1_des', 'm1_decade_ngc', 'm1_decade_sgc'], 'm^2': ['m2_des', 'm2_decade_ngc', 'm2_decade_sgc'], 'm^3': ['m3_des', 'm3_decade_ngc', 'm3_decade_sgc'], 'm^4': ['m4_des', 'm4_decade_ngc', 'm4_decade_sgc']}
+[0 : camb] `camb` module loaded successfully from /home/baijc/software/MGCobaya/MGCAMB/camb

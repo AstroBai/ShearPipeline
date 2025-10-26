@@ -1,0 +1,161 @@
+params:
+  A_IA_des:
+    prior:
+      min: -5
+      max: 5
+    ref: 0  
+    latex: A_{\mathrm{IA}}
+  eta_IA_des:
+    prior:
+      min: -5
+      max: 5
+    ref: 0   
+    latex: \eta_{\mathrm{IA}}
+  logMc_des:
+    prior:
+      min: 12
+      max: 16
+    ref: 14  
+    latex: \log m^{\mathrm{c}}
+  eta_b_des:
+    prior:
+      min: 0.1
+      max: 1.0
+    ref: 0.5  
+    latex: \eta_{\mathrm{b}}
+  dz1_des:
+    prior:
+      dist: norm
+      loc: 0
+      scale: 0.018
+    ref: 0   
+    latex: \delta z_1
+  dz2_des:
+    prior:
+      dist: norm
+      loc: 0
+      scale: 0.015
+    ref: 0   
+    latex: \delta z_2
+  dz3_des:
+    prior:
+      dist: norm
+      loc: 0
+      scale: 0.011
+    ref: 0   
+    latex: \delta z_3
+  dz4_des:
+    prior:
+      dist: norm
+      loc: 0
+      scale: 0.017
+    ref: 0   
+    latex: \delta z_4
+  m1_des:
+    prior:
+      dist: norm
+      loc: -0.0063
+      scale: 0.0091
+    ref: 0   
+    latex: m^1
+  m2_des:
+    prior:
+      dist: norm
+      loc: -0.0198
+      scale: 0.0078
+    ref: 0   
+    latex: m^2
+  m3_des:
+    prior:
+      dist: norm
+      loc: -0.0241
+      scale: 0.0076
+    ref: 0   
+    latex: m^3
+  m4_des:
+    prior:
+      dist: norm
+      loc: -0.0369
+      scale: 0.0076
+    ref: 0   
+    latex: m^4
+  dz1_l_des:
+    prior:
+      dist: norm
+      loc: -0.009
+      scale: 0.007
+    ref: 0   
+    latex: \delta z_1_l
+  dz2_l_des:
+    prior:
+      dist: norm
+      loc: -0.035
+      scale: 0.011
+    ref: 0   
+    latex: \delta z_2_l
+  dz3_l_des:
+    prior:
+      dist: norm
+      loc: -0.005
+      scale: 0.006
+    ref: 0   
+    latex: \delta z_3_l
+  dz4_l_des:
+    prior:
+      dist: norm
+      loc: -0.007
+      scale: 0.006
+    ref: 0   
+    latex: \delta z_4_l  
+  sl1_des:
+    prior:
+      dist: norm
+      loc: 0.98
+      scale: 0.06
+    ref: 1   
+    latex: \delta s_1
+  sl2_des:
+    prior:
+      dist: norm
+      loc: 1.31
+      scale: 0.09
+    ref: 1  
+    latex: \delta s_2
+  sl3_des:
+    prior:
+      dist: norm
+      loc: 0.87
+      scale: 0.05
+    ref: 1  
+    latex: \delta s_3
+  sl4_des:
+    prior:
+      dist: norm
+      loc: 0.92
+      scale: 0.05
+    ref: 1   
+    latex: \delta s_4  
+  magl_1_des: 0.42  
+  magl_2_des: 0.30
+  magl_3_des: 1.76
+  magl_4_des: 1.94
+  b1_des:
+    prior: 
+      min: 0.8
+      max: 3.0
+    ref: 1  
+  b2_des:
+    prior: 
+      min: 0.8
+      max: 3.0
+    ref: 1  
+  b3_des:
+    prior: 
+      min: 0.8
+      max: 3.0
+    ref: 1  
+  b4_des:
+    prior: 
+      min: 0.8
+      max: 3.0
+    ref: 1        
