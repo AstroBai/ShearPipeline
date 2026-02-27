@@ -1,0 +1,76 @@
+params:
+  A_IA_kids:
+    prior:
+      min: -5
+      max: 5
+    ref: 0  
+    latex: A_{\mathrm{IA}}
+  eta_IA_kids:
+    prior:
+      min: -5
+      max: 5
+    ref: 0   
+    latex: \eta_{\mathrm{IA}}
+  uncorrelated_dz1_kids:
+    prior:
+      dist: norm
+      loc: 0
+      scale: 1
+    ref: 0   
+    latex: \delta z_1^{u}
+  uncorrelated_dz2_kids:
+    prior:
+      dist: norm
+      loc: 0
+      scale: 1
+    ref: 0   
+    latex: \delta z_2^{u}
+  uncorrelated_dz3_kids:
+    prior:
+      dist: norm
+      loc: 0
+      scale: 1
+    ref: 0   
+    latex: \delta z_3^{u}
+  uncorrelated_dz4_kids:
+    prior:
+      dist: norm
+      loc: 0
+      scale: 1
+    ref: 0   
+    latex: \delta z_4^{u}
+  uncorrelated_dz5_kids:
+    prior:
+      dist: norm
+      loc: 0
+      scale: 1
+    ref: 0
+    latex: \delta z_5^{u}
+  uncorrelated_dz6_kids:
+    prior:
+      dist: norm
+      loc: 0
+      scale: 1
+    ref: 0
+    latex: \delta z_6^{u}
+
+  logMc:
+    prior:
+      min: 12
+      max: 16
+    ref: 
+      dist: norm
+      loc: 14
+      scale: 0.5  
+    proposal: 0.5  
+    latex: \log m^{\mathrm{c}}
+  eta_b:
+    prior:
+      min: 0.1
+      max: 1.0
+    ref:
+      dist: norm
+      loc: 0.5
+      scale: 0.1  
+    proposal: 0.1   
+    latex: \eta_{\mathrm{b}}  

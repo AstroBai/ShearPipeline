@@ -1,0 +1,221 @@
+theory: null
+likelihood:
+  kids_legacy_no_cut.shear:
+    type: []
+    speed: 0.3
+    stop_at_error: false
+    version: null
+    python_path: .
+    input_params:
+    - omegam
+    - omegab
+    - H0
+    - ns
+    - As
+    - mnu
+    - logfR0
+    - A_IA_kids
+    - eta_IA_kids
+    - uncorrelated_dz1_kids
+    - uncorrelated_dz2_kids
+    - uncorrelated_dz3_kids
+    - uncorrelated_dz4_kids
+    - uncorrelated_dz5_kids
+    - uncorrelated_dz6_kids
+    - logMc
+    - eta_b
+    output_params: []
+params:
+  omegam:
+    latex: \Omega_\mathrm{m}
+    prior:
+      min: 0.1
+      max: 0.5
+    ref:
+      dist: norm
+      loc: 0.3
+      scale: 0.02
+    proposal: 0.01
+  omegab:
+    latex: \Omega_\mathrm{b}
+    prior:
+      min: 0.03
+      max: 0.07
+    ref:
+      dist: norm
+      loc: 0.05
+      scale: 0.002
+    proposal: 0.002
+  H0:
+    latex: H0
+    prior:
+      min: 50
+      max: 90
+    ref:
+      dist: norm
+      loc: 67
+      scale: 2
+    proposal: 2
+  ns:
+    prior:
+      min: 0.8
+      max: 1.2
+    ref:
+      dist: norm
+      loc: 1.0
+      scale: 0.02
+    latex: n_\mathrm{s}
+    proposal: 0.02
+  logA:
+    prior:
+      min: 1.61
+      max: 3.91
+    ref:
+      dist: norm
+      loc: 3.05
+      scale: 0.01
+    proposal: 0.01
+    latex: \log(10^{10} A_\mathrm{s})
+    drop: true
+  As:
+    value: 'lambda logA: 1e-10*np.exp(logA)'
+    latex: A_\mathrm{s}
+    derived: true
+  mnu:
+    value: 0.06
+  logfR0:
+    prior:
+      min: -7
+      max: -3.5
+    ref:
+      dist: norm
+      loc: -6
+      scale: 0.5
+    proposal: 0.5
+  A_IA_kids:
+    prior:
+      min: -5
+      max: 5
+    ref: 0
+    latex: A_{\mathrm{IA}}
+  eta_IA_kids:
+    prior:
+      min: -5
+      max: 5
+    ref: 0
+    latex: \eta_{\mathrm{IA}}
+  uncorrelated_dz1_kids:
+    prior:
+      dist: norm
+      loc: 0
+      scale: 1
+    ref: 0
+    latex: \delta z_1^{u}
+  uncorrelated_dz2_kids:
+    prior:
+      dist: norm
+      loc: 0
+      scale: 1
+    ref: 0
+    latex: \delta z_2^{u}
+  uncorrelated_dz3_kids:
+    prior:
+      dist: norm
+      loc: 0
+      scale: 1
+    ref: 0
+    latex: \delta z_3^{u}
+  uncorrelated_dz4_kids:
+    prior:
+      dist: norm
+      loc: 0
+      scale: 1
+    ref: 0
+    latex: \delta z_4^{u}
+  uncorrelated_dz5_kids:
+    prior:
+      dist: norm
+      loc: 0
+      scale: 1
+    ref: 0
+    latex: \delta z_5^{u}
+  uncorrelated_dz6_kids:
+    prior:
+      dist: norm
+      loc: 0
+      scale: 1
+    ref: 0
+    latex: \delta z_6^{u}
+  logMc:
+    prior:
+      min: 12
+      max: 16
+    ref:
+      dist: norm
+      loc: 14
+      scale: 0.5
+    proposal: 0.5
+    latex: \log m^{\mathrm{c}}
+  eta_b:
+    prior:
+      min: 0.1
+      max: 1.0
+    ref:
+      dist: norm
+      loc: 0.5
+      scale: 0.1
+    proposal: 0.1
+    latex: \eta_{\mathrm{b}}
+sampler:
+  mcmc:
+    sampler_type: mcmc
+    supports_periodic_params: true
+    burn_in: 0
+    max_tries: 40d
+    covmat: auto
+    covmat_params: null
+    proposal_scale: 2.4
+    output_every: 60s
+    learn_every: 10d
+    temperature: 1
+    learn_proposal: true
+    learn_proposal_Rminus1_max: 100
+    learn_proposal_Rminus1_max_early: 100
+    learn_proposal_Rminus1_min: 0.0
+    max_samples: .inf
+    Rminus1_stop: 0.05
+    Rminus1_cl_stop: 0.2
+    Rminus1_cl_level: 0.95
+    Rminus1_single_split: 4
+    measure_speeds: true
+    oversample_power: 0.4
+    oversample_thin: true
+    drag: false
+    blocking:
+    - - 1
+      - - omegam
+        - omegab
+        - H0
+        - ns
+        - logA
+        - logfR0
+        - A_IA_kids
+        - eta_IA_kids
+        - uncorrelated_dz1_kids
+        - uncorrelated_dz2_kids
+        - uncorrelated_dz3_kids
+        - uncorrelated_dz4_kids
+        - uncorrelated_dz5_kids
+        - uncorrelated_dz6_kids
+        - logMc
+        - eta_b
+    callback_function: null
+    callback_every: null
+    seed: null
+    check_every: null
+    oversample: null
+    drag_limits: null
+    fallback_covmat_scale: 4
+    version: 3.6.1
+output: test
+version: 3.6.1
